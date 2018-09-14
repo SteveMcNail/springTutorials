@@ -4,7 +4,13 @@ public class TrackCoach implements Coach {
 
   private String emailAddress;
   private String team;
-  
+
+  public TrackCoach(HappyFortuneService happyFortuneService) {
+  }
+
+  public TrackCoach() {
+  }
+
   @Override
   public String getDailyWorkout() {
     return "Run a hard 5k";
@@ -32,4 +38,15 @@ public class TrackCoach implements Coach {
   public void setTeam(String team) {
     this.team = team;
   }
+
+  // add an init method
+  public void doMyStartupStuff() {
+    System.out.println("TrackCoach: Inside the startup/init method");
+  }
+
+  // add a destroy method
+  public void doMyCleanupStuff() {
+    System.out.println("TrackCoach: Inside the destroy method");
+  }
 }
+
