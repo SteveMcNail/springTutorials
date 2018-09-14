@@ -1,5 +1,7 @@
 package com.luv2code.springdemo;
 
+import java.util.Random;
+
 public class EventingCoach implements Coach {
 
   private FortuneService fortuneService;
@@ -28,13 +30,17 @@ public class EventingCoach implements Coach {
     return emailAddress;
   }
 
-  public void setEmailAddress(String emailAddress) {
-    this.emailAddress = emailAddress;
-  }
-
   @Override
   public String getTeam() {
     return team;
+  }
+
+  public void setFortuneService(FortuneService fortuneService) {
+    this.fortuneService = fortuneService;
+  }
+
+  public void setEmailAddress(String emailAddress) {
+    this.emailAddress = emailAddress;
   }
 
   public void setTeam(String team) {

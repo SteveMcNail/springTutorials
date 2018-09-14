@@ -9,7 +9,10 @@ public class SetterDemoApp {
     ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
     // retrieve spring bean
-    Coach theCoach = context.getBean("myCricketCoach", Coach.class);
+    Coach theCoach = context.getBean("myCoach", Coach.class);
+    Coach anotherCoach = context.getBean("myCoach", Coach.class);
+
+
 
     // call bean-methods
     System.out.println("Listen kid, my fortune-advise today is '" +theCoach.getDailyFortune() + "'");
