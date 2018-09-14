@@ -1,29 +1,28 @@
 package com.luv2code.springdemo;
 
-public class EventingCoach implements Coach {
+public class CricketCoach implements Coach {
 
-  private FortuneService fortuneService;
   private String emailAddress;
   private String team;
 
-  public EventingCoach(FortuneService fortuneService) {
-    this.fortuneService = fortuneService;
-  }
+  private FortuneService fortuneService;
 
-  public EventingCoach() {
+  public CricketCoach() {  }
+
+  public void setFortuneService(FortuneService fortuneService) {
+    this.fortuneService = fortuneService;
   }
 
   @Override
   public String getDailyWorkout() {
-    return "jump that coffin 3 times without breaking your neck!!";
+    return "practice fast bowling for 15 minutes";
   }
 
   @Override
   public String getDailyFortune() {
-    return "just do it!";
+    return fortuneService.getFortune();
   }
 
-  @Override
   public String getEmailAddress() {
     return emailAddress;
   }
@@ -32,7 +31,6 @@ public class EventingCoach implements Coach {
     this.emailAddress = emailAddress;
   }
 
-  @Override
   public String getTeam() {
     return team;
   }
