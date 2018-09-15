@@ -8,4 +8,9 @@ public class EventingCoach implements Coach {
   public String getDailyWorkout() {
     return "Jump these coffins three times!";
   }
+
+  @Override
+  public String getDailyFortune() {
+    return null;
+  }
 }
