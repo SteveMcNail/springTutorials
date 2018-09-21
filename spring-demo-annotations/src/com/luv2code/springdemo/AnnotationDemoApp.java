@@ -16,6 +16,7 @@ public class AnnotationDemoApp {
     System.out.println("\nThe tennis coach looks into his crystall ball and proclaims '" + theTennisCoach.getDailyFortune() + "'");
 
     System.out.println("\nThe swim coach yells " + theSwimCoach.getDailyWorkout());
+    System.out.println("\nThe swim coach muses: " + theSwimCoach.getDailyFortune());
 
 //    System.out.println("\nThe eventing coach hollers " + theEventingCoach.getDailyWorkout());
 //    System.out.println("\ndaily fortune of the tennis coach: " + theTennisCoach.getDailyFortune());

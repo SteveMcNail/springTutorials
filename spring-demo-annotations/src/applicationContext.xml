@@ -9,6 +9,7 @@
 
       <!-- add properties to the context -->
       <context:property-placeholder location="classpath:sports.properties" />
+      <context:property-placeholder location="classpath:fortunes.properties" />
 
   
 </beans>
