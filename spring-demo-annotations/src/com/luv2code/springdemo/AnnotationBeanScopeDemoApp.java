@@ -21,6 +21,8 @@ public class AnnotationBeanScopeDemoApp {
     System.out.println("\nMomory location for theCoach " +  theCoach);
     System.out.println("\nMomory location for alphaCoach " +  alphaCoach);
 
+    System.out.println("coach says " + theCoach.getDailyFortune());
+
     // close context
     context.close();
 
