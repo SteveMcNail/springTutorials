@@ -10,7 +10,7 @@ public class AnnotationDemoApp {
     // retrieve bean from sprint container
     Coach theTennisCoach = context.getBean("tennisCoach", Coach.class);
     Coach theEventingCoach = context.getBean("eventingCoach", Coach.class);
-    Coach theSwimCoach = context.getBean("swimCoach", Coach.class);
+    Coach theSwimCoach = context.getBean("hockeyCoach", Coach.class);
     // do something
     System.out.println("\nThe tennis coach mumbles " + theTennisCoach.getDailyWorkout());
     System.out.println("\nThe tennis coach looks into his crystall ball and proclaims '" + theTennisCoach.getDailyFortune() + "'");
