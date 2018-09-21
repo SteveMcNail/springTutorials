@@ -13,9 +13,10 @@ public class AnnotationDemoApp {
 
     // do something
     System.out.println("\nThe tennis coach mumbles " + theTennisCoach.getDailyWorkout());
-    System.out.println("\nThe eventing coach hollers " + theEventingCoach.getDailyWorkout());
-    System.out.println("\ndaily fortune of the tennis coach: " + theTennisCoach.getDailyFortune());
-    // close context
+    System.out.println("\nThe tennis coach looks into his crystall ball and proclaims '" + theTennisCoach.getDailyFortune() + "'");
+//    System.out.println("\nThe eventing coach hollers " + theEventingCoach.getDailyWorkout());
+//    System.out.println("\ndaily fortune of the tennis coach: " + theTennisCoach.getDailyFortune());
+//     close context
     context.close();
   }
 }
