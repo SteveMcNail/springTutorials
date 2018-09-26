@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+  <!-- Define your beans here -->
+  <!-- Define the dependency -->
+  <bean id="tennisFortuneService"
+        class="de.naegele.stephan.katas.spring.configuration.xml.exampleSolution.TennisFortuneService">
+  </bean>
+
+  <bean id="tennisCoach" class="de.naegele.stephan.katas.spring.configuration.xml.exampleSolution.TennisCoach">
+    <!-- setup constructor injection -->
+    <constructor-arg ref="tennisFortuneService"/>
+  </bean>
+
+
+</beans>
