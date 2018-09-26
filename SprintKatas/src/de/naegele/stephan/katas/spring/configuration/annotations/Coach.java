@@ -1,4 +1,4 @@
-package de.naegele.stephan.spring.katas.configuration.java;
+package de.naegele.stephan.katas.spring.configuration.annotations;
 
 public interface Coach {
   public String getDailyWorkout();
