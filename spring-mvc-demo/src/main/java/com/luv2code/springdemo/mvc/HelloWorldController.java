@@ -3,9 +3,9 @@ package com.luv2code.springdemo.mvc;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-import java.lang.reflect.Member;
 
 @Controller
 public class HelloWorldController {
@@ -43,6 +43,22 @@ public class HelloWorldController {
     // add message to code
     model.addAttribute("message", result);
     
+    return "helloworld";
+  }
+
+  @RequestMapping("/processFormThree")
+  public String processFormVersionThree(@RequestParam("studentName") String studentName,
+                                        Model model) {
+
+    // convert to upper case
+    studentName = studentName.toUpperCase();
+
+    // create the message
+    String result = "Hey my friend from v3! " + studentName;
+
+    // add message to code
+    model.addAttribute("message", result);
+
     return "helloworld";
   }
 }
