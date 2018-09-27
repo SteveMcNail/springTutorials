@@ -7,7 +7,10 @@
 
 <body>
 
-<span>The student is confirmed: ${student.firstName} ${student.lastName}</span>
+<span>The student is confirmed: ${student.firstName} ${student.lastName}<br><br>
+  country: ${student.country}
+
+</span>
 
 </body>
 
