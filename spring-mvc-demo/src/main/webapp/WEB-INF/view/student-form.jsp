@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@page isELIgnored="false" %>
 <html>
 
 <head>
@@ -19,11 +20,7 @@
   <br>
   <span>
     <form:select path="country">
-      <form:option value="Brazil" label="Brazil"/>
-      <form:option value="France" label="France"/>
-      <form:option value="Germany" label="Germany"/>
-      <form:option value="UK" label="UK"/>
-      <form:option value="India" label="India"/>
+      <form:options items="${student.countryOptions}"/>
     </form:select>
   </span>
 
