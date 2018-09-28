@@ -18,13 +18,15 @@
 	<context:component-scan base-package="com.luv2code.springdemo" />
 
   <!-- optional step - configure ressources -->
+  <!--suppress UnparsedCustomBeanInspection -->
   <mvc:resources mapping="/resources/**" location="/resources/" />
 
   <!-- optional step - add data-resources -->
   <util:properties id="countryOptions" location="classpath:countries.properties" />
 
   <!-- Step 4: Add support for conversion, formatting and validation support -->
-	<mvc:annotation-driven/>
+	<!--suppress UnparsedCustomBeanInspection -->
+  <mvc:annotation-driven/>
 
 	<!-- Step 5: Define Spring MVC view resolver -->
 	<bean
