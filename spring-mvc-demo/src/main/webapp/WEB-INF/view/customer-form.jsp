@@ -24,7 +24,7 @@
       </span>
       <br>
       <span>
-        Free passes: <form:input path="freePasses"/>
+        Free passes (*): <form:input path="freePasses"/>
         <form:errors path="freePasses" cssClass="error" />
       </span>
       <br>

@@ -21,7 +21,7 @@
   <mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
 
   <!-- optional step - add data-resources -->
-  <util:properties id="countryOptions" location="classpath:WEB-INF/countries.properties" />
+  <util:properties id="countryOptions" location="classpath:countries.properties" />
 
   <!-- Step 4: Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven/>
@@ -33,6 +33,10 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
+  <!-- load the custom message ressource -->
+  <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+    <property name="basenames" value="messages" />
+  </bean>
 </beans>
 
 
