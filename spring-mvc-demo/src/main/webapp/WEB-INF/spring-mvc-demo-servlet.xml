@@ -18,7 +18,7 @@
 	<context:component-scan base-package="com.luv2code.springdemo" />
 
   <!-- optional step - configure ressources -->
-  <mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
+  <mvc:resources mapping="/resources/**" location="/resources/" />
 
   <!-- optional step - add data-resources -->
   <util:properties id="countryOptions" location="classpath:countries.properties" />
