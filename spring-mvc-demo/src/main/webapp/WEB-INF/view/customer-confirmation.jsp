@@ -1,3 +1,4 @@
+<jsp:useBean id="customer" scope="request" type="com.luv2code.springdemo.mvc.Customer"/>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
@@ -9,7 +10,7 @@
 
 <body>
 
-<span>The customer is confirmed: ${customer.firstName} ${customer.lastName}<br><br>
+<span>The customer is confirmed: ${customer.firstName} ${customer.lastName}<br><br>He has ${customer.freePasses} free passes.
 
 </span>
 
