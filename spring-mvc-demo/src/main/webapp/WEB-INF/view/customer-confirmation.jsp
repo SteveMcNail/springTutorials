@@ -10,7 +10,7 @@
 
 <body>
 
-<span>The customer is confirmed: ${customer.firstName} ${customer.lastName}<br><br>He has ${customer.freePasses} free passes.
+<span>The customer is confirmed: ${customer.firstName}, ${customer.lastName}<br><br>From ${customer.postalCode}<br><br>He has ${customer.freePasses} free passes.
 
 </span>
 
